@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    width: 30%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    padding: 20px;
+}
+.result{
+    border: 1px solid rgb(206, 206, 206);
+    height: 70px;
+    text-align: end;
+    line-height: 70px;
+    font-size: 25px;
+    padding-right: 10px;
+    letter-spacing: 2px;
+}
+.result:hover{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)
+}
+.calculator__input{
+    display: flex;
+    flex-direction: column;
+}
+.calculator__input__operator{
+    display:flex;
+    margin:20px 0;
+}
+.calculator__input__equal{
+    width: 98px;
+    background:rgb(121, 185, 216);
+    margin-bottom: 20px;
+    display:flex;
+    align-items: center;
+    font-size: 30px;
+
+    justify-content: center;
+    cursor: pointer;
+}
+.calculator__input__equal:hover{
+    background:rgb(69, 169, 220);
+}
+.operator{
+    flex:1;
+    height: 60px;
+    background:#ddd;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.operator:hover{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)
+
+}
+.operator:not(:nth-last-child(1)){
+    margin-right: 10px;
+}
+.caclulator__input__wrap{
+    display:flex;
+}
+.calculator__input__number{
+    display:flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex:1;
+}
+.calculator__input__number__text{
+    height: 60px;
+    background:#f1f1f1;
+    width: 30%;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0px 10px 20px 0;
+
+}
+.calculator__input__number__clear{
+    height: 60px;
+    background:#f1f1f1;
+    width: 30%;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin:0px 10px 20px 0;
+}
+.calculator__input__number__clear:hover{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)}
+
+}
+.calculator__input__number__text:hover{
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2)}
